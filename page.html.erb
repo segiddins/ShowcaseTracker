@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Robespierre &amp; the Reign of Cher Showcase Tracker</title>
+    <title>Robespierre &amp; the Reign of Cher's Showcase Progress!</title>
     <style media="screen">
     body
     {
@@ -53,7 +53,7 @@
     ul .message
     {
       text-align: right;
-    } 
+    }
     </style>
   </head>
   <body>
@@ -71,11 +71,13 @@
       </form>
       <div id="messages">
         <div class="title">Messages</div>
-        <% messages.each do |message| %>
-          <ul class="message">
-            <%= message[:content] %> <br /> -- <%= message[:created_at] %>
+          <ul>
+            <% messages.each do |message| %>
+            <li class="message">
+              <%= message[:content] %> <br /> &mdash; <%= message[:created_at] %>
+            </li>
+            <% end %>
           </ul>
-        <% end %>
       </div>
     </div>
   </body>

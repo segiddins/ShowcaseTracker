@@ -1,16 +1,16 @@
 ---
 - name: Planning
   sound: rev.wav
-  color: red
+  color: "#d60707"
 - name: Rolling Chassis
   sound: machines.wav
-  color: yellow
+  color: "#e0b91d"
 - name: Body
   sound: ~
-  color: yellow
+  color: "#e0b91d"
 - name: Decoration
   sound: fanfare.wav
-  color: yellow
+  color: "#e0b91d"
 - name: Race!
   sound: squeel.wav
-  color: green
+  color: "#0aad2b"

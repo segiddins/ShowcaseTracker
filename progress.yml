@@ -1,0 +1,16 @@
+---
+- name: Planning
+  sound: rev.wav
+  color: red
+- name: Rolling Chassis
+  sound: machines.wav
+  color: yellow
+- name: Body
+  sound: ~
+  color: yellow
+- name: Decoration
+  sound: fanfare.wav
+  color: yellow
+- name: Race!
+  sound: squeel.wav
+  color: green

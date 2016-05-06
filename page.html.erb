@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Robespierre &amp; the Reign of Cher Showcase Tracker</title>
+    <style media="screen">
+      .showcase-progress {
+        color: <%= progress['color'] %>
+      }
+    </style>
+  </head>
+  <body>
+    <div class="showcase-progress">
+      <h1>Showcase Progress!</h1>
+      <h2>Go Kart</h2>
+      <p>Currently: <%= progress['name'] %></p>
+      <progress value="<%= ENV['PROGRESS_STAGE'].to_i + 1 %>" max="5"></progress>
+    </div>
+    <h1>Send Encouragement!</h1>
+    <form class="" action="/" method="post">
+      <input type="textarea" name="message" value="Go BJ Scots!">
+      <input type="submit" value="submit">
+    </form>
+    <h1>Messages</h1>
+    <% messages.each do |message| %>
+      <ul>
+        <%= message[:content] %> <br> -- <%= message[:created_at] %>
+      </ul>
+    <% end %>
+  </body>
+</html>

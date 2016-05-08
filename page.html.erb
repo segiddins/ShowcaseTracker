@@ -91,7 +91,7 @@
           <ul>
             <% messages.each do |message| %>
             <li class="message">
-              <%= message[:content] %> <br /> &mdash; <%= message[:created_at] %>
+              <%= ERB::Util.h message[:content] %> <br /> &mdash; <%= message[:created_at] %>
             </li>
             <% end %>
           </ul>
